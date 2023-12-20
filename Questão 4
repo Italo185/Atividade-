@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    
+    while (1) {
+        scanf("%d", &numero);
+        
+        if (numero == 0) {
+            break;
+        }
+        
+        int fatorial = 1;
+        
+        for (int i = 1; i <= numero; i++) {
+            fatorial *= i;
+        }
+        
+        printf("%d - %d\n", numero, fatorial);
+    }
+    
+    return 0;
+}
