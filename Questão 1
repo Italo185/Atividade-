@@ -1,1 +1,22 @@
+#include <stdio.h>
+#include <math.h>
 
+int main() {
+    double numero;
+    
+    scanf("%lf", &numero);
+    
+    double quadrado = numero * numero;
+    double cubo = numero * numero * numero;
+    double raiz_quadrada = sqrt(numero);
+    double raiz_cubica = cbrt(numero);
+    int resto_divisao = (int)numero % 3;
+    
+    printf("%.2lf\n", quadrado);
+    printf("%.2lf\n", cubo);
+    printf("%.2lf\n", raiz_quadrada);
+    printf("%.2lf\n", raiz_cubica);
+    printf("%d\n", resto_divisao);
+    
+    return 0;
+}
