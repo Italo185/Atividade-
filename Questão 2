@@ -1,1 +1,16 @@
+#include <stdio.h>
 
+int main() {
+    double hora;
+    
+    scanf("%lf", &hora);
+    
+    int horas = (int)hora;
+    int minutos = (hora - horas) * 100;
+    int segundos = minutos * 60;
+    
+    printf("%d minutos\n", horas * 60 + minutos);
+    printf("%d segundos\n", segundos);
+    
+    return 0;
+}
